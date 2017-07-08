@@ -1,0 +1,449 @@
+fileFormatVersion: 2
+guid: a79186ff1f9054670879485935a2dd1f
+timeCreated: 1482194217
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HadalOriginal UI Status_0
+    21300002: HadalOriginal UI Status_1
+    21300004: HadalOriginal UI Status_2
+    21300006: HadalOriginal UI Status_3
+    21300008: HadalOriginal UI Status_4
+    21300010: HadalOriginal UI Status_5
+    21300012: HadalOriginal UI Status_6
+    21300014: HadalOriginal UI Status_7
+    21300016: HadalOriginal UI Status_8
+    21300018: HadalOriginal UI Status_9
+    21300020: HadalOriginal UI Status_10
+    21300022: HadalOriginal UI Status_11
+    21300024: HadalOriginal UI Status_12
+    21300026: HadalOriginal UI Status_13
+    21300028: HadalOriginal UI Status_14
+    21300030: HadalOriginal UI Status_15
+    21300032: HadalOriginal UI Status_16
+    21300034: HadalOriginal UI Status_17
+    21300036: HadalOriginal UI Status_18
+    21300038: HadalOriginal UI Status_19
+    21300040: HadalOriginal UI Status_20
+    21300042: HadalOriginal UI Status_21
+    21300044: HadalOriginal UI Status_22
+    21300046: HadalOriginal UI Status_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HadalOriginal UI Status_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2814
+        width: 265
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -88.10667, y: 20.523926}
+        - {x: -90.10667, y: 15.523926}
+        - {x: -90.10667, y: -20.476074}
+        - {x: 91.89333, y: -20.476074}
+        - {x: 91.89333, y: 6.523926}
+        - {x: 35.893333, y: 20.523926}
+    - name: HadalOriginal UI Status_1
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 2814
+        width: 265
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -85.824005, y: 20.523926}
+        - {x: -90.824005, y: 19.523926}
+        - {x: -90.824005, y: -18.476074}
+        - {x: -88.824005, y: -20.476074}
+        - {x: 51.175995, y: -20.476074}
+        - {x: 91.175995, y: -18.476074}
+        - {x: 91.175995, y: 7.523926}
+        - {x: 65.175995, y: 20.523926}
+    - name: HadalOriginal UI Status_2
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 2814
+        width: 265
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.40668, y: 20.523926}
+        - {x: -90.40668, y: -20.476074}
+        - {x: 72.59332, y: -20.476074}
+        - {x: 90.59332, y: -18.476074}
+        - {x: 90.59332, y: 15.523926}
+        - {x: 46.593323, y: 20.523926}
+    - name: HadalOriginal UI Status_3
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2814
+        width: 266
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -84.80664, y: 20.523926}
+        - {x: -90.80664, y: 19.523926}
+        - {x: -90.80664, y: -19.476074}
+        - {x: -89.80664, y: -20.476074}
+        - {x: 53.19336, y: -20.476074}
+        - {x: 92.19336, y: -18.476074}
+        - {x: 92.19336, y: 7.523926}
+        - {x: 67.19336, y: 20.523926}
+    - name: HadalOriginal UI Status_4
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 2525
+        width: 265
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.02405, y: 22.733276}
+        - {x: -90.02405, y: -12.266724}
+        - {x: -79.02405, y: -21.266724}
+        - {x: 25.975952, y: -21.266724}
+        - {x: 91.97595, y: -6.2667236}
+        - {x: 91.97595, y: 21.733276}
+        - {x: 68.97595, y: 22.733276}
+    - name: HadalOriginal UI Status_5
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 2142
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_6
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 2142
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1925
+        width: 265
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.10667, y: 21.1333}
+        - {x: -90.10667, y: -19.8667}
+        - {x: -85.10667, y: -20.8667}
+        - {x: 58.893333, y: -20.8667}
+        - {x: 91.89333, y: -5.866699}
+        - {x: 91.89333, y: 21.1333}
+    - name: HadalOriginal UI Status_8
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1925
+        width: 265
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.824005, y: 21.1333}
+        - {x: -90.824005, y: -9.866699}
+        - {x: -80.824005, y: -20.8667}
+        - {x: 82.175995, y: -20.8667}
+        - {x: 91.175995, y: -8.866699}
+        - {x: 91.175995, y: 21.1333}
+    - name: HadalOriginal UI Status_9
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1925
+        width: 265
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -90.40668, y: 21.1333}
+        - {x: -90.40668, y: -19.8667}
+        - {x: -84.40668, y: -20.8667}
+        - {x: 58.593323, y: -20.8667}
+        - {x: 90.59332, y: -5.866699}
+        - {x: 90.59332, y: 21.1333}
+    - name: HadalOriginal UI Status_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1541
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1541
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_12
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1386
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_13
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1386
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_14
+      rect:
+        serializedVersion: 2
+        x: 2423
+        y: 1386
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 785
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: HadalOriginal UI Status_16
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 851
+        width: 164
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.60669, y: 34.94934}
+        - {x: -55.60669, y: -33.05066}
+        - {x: 46.39331, y: -33.05066}
+        - {x: 57.39331, y: -27.05066}
+        - {x: 57.39331, y: 32.94934}
+        - {x: 44.39331, y: 34.94934}
+    - name: HadalOriginal UI Status_17
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 851
+        width: 162
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.324036, y: 34.94934}
+        - {x: -55.324036, y: -33.05066}
+        - {x: 55.675964, y: -33.05066}
+        - {x: 55.675964, y: 33.94934}
+        - {x: 47.675964, y: 34.94934}
+    - name: HadalOriginal UI Status_18
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 851
+        width: 164
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -56.40674, y: 34.94934}
+        - {x: -56.40674, y: -33.05066}
+        - {x: 51.59326, y: -33.05066}
+        - {x: 56.59326, y: -27.05066}
+        - {x: 56.59326, y: 34.94934}
+    - name: HadalOriginal UI Status_19
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 851
+        width: 163
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55.30664, y: 34.94934}
+        - {x: -55.30664, y: -33.05066}
+        - {x: 56.69336, y: -33.05066}
+        - {x: 56.69336, y: 33.94934}
+        - {x: 48.69336, y: 34.94934}
+    - name: HadalOriginal UI Status_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 186
+        width: 132
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.636, y: 79.976}
+        - {x: -44.636, y: 52.975998}
+        - {x: -44.636, y: -59.024002}
+        - {x: -38.636, y: -78.024}
+        - {x: 38.364, y: -78.024}
+        - {x: 46.364, y: -69.024}
+        - {x: 46.364, y: 47.975998}
+        - {x: 39.364, y: 79.976}
+    - name: HadalOriginal UI Status_21
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 186
+        width: 134
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44.71866, y: 79.976}
+        - {x: -45.71866, y: 75.976}
+        - {x: -45.71866, y: -78.024}
+        - {x: 47.28134, y: -78.024}
+        - {x: 47.28134, y: 49.975998}
+        - {x: 29.281342, y: 79.976}
+    - name: HadalOriginal UI Status_22
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 186
+        width: 133
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.436035, y: 79.976}
+        - {x: -45.436035, y: 72.976}
+        - {x: -45.436035, y: -70.024}
+        - {x: -40.436035, y: -78.024}
+        - {x: 34.563965, y: -78.024}
+        - {x: 45.563965, y: -58.024002}
+        - {x: 45.563965, y: 44.975998}
+        - {x: 28.563965, y: 79.976}
+    - name: HadalOriginal UI Status_23
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 186
+        width: 133
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42.018677, y: 79.976}
+        - {x: -45.018677, y: 49.975998}
+        - {x: -45.018677, y: -58.024002}
+        - {x: -38.018677, y: -78.024}
+        - {x: 31.981323, y: -78.024}
+        - {x: 46.981323, y: -63.024002}
+        - {x: 46.981323, y: 48.975998}
+        - {x: 40.981323, y: 79.976}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

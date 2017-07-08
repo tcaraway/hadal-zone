@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: 47a537854cb6a41a2aafe54358620c0d
+timeCreated: 1481393794
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dumbo_0
+    21300002: dumbo_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dumbo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -150, y: 300}
+        - {x: -150, y: -300}
+        - {x: 150, y: -300}
+        - {x: 150, y: 300}
+    - name: dumbo_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 384
+        width: 192
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -64}
+        - {x: 14, y: -54}
+        - {x: 30, y: -68}
+        - {x: 36, y: -68}
+        - {x: 38, y: -66}
+        - {x: 39, y: -59}
+        - {x: 39, y: -73}
+        - {x: 46, y: -83}
+        - {x: 80, y: -88}
+        - {x: 96, y: 12}
+        - {x: 96, y: 85}
+        - {x: 95, y: 90}
+        - {x: -96, y: 90}
+        - {x: -96, y: -90}
+        - {x: -66, y: -90}
+        - {x: -46, y: -87}
+        - {x: -44, y: -79}
+        - {x: -47, y: -68}
+        - {x: -44, y: -78}
+        - {x: -44, y: -90}
+        - {x: 9, y: -90}
+        - {x: 32, y: -88}
+        - {x: 33, y: -71}
+        - {x: 24, y: -64}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

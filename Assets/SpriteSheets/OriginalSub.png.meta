@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: c3d0f7f463b384e59b5b8b5e22abec74
+timeCreated: 1480905956
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HadalOriginal 2 (1)_0
+    21300002: HadalOriginal 2 (1)_1
+    21300004: HadalOriginal 2 (1)_2
+    21300006: HadalOriginal 2 (1)_3
+    21300008: HadalOriginal 2 (1)_4
+    21300010: HadalOriginal 2 (1)_5
+    21300012: HadalOriginal 2 (1)_6
+    21300014: HadalOriginal 2 (1)_7
+    21300016: HadalOriginal 2 (1)_8
+    21300018: HadalOriginal 2 (1)_9
+    21300020: HadalOriginal 2 (1)_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HadalOriginal 2 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1925
+        width: 326
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.873337, y: -76.33325}
+        - {x: 3.1266632, y: -51.333252}
+        - {x: 140.12666, y: -46.333252}
+        - {x: 140.12666, y: 36.666748}
+        - {x: 120.12666, y: 40.666748}
+        - {x: 2.1266632, y: 57.666748}
+        - {x: -9.873337, y: 78.66675}
+        - {x: 102.12666, y: 100.66675}
+        - {x: 102.12666, y: 129.66675}
+        - {x: 15.126663, y: 150.66675}
+        - {x: -117.87334, y: 150.66675}
+        - {x: -132.87334, y: 141.66675}
+        - {x: -138.87334, y: 116.66675}
+        - {x: -138.87334, y: -114.33325}
+        - {x: -134.87334, y: -136.33325}
+        - {x: -116.87334, y: -149.33325}
+        - {x: 23.126663, y: -149.33325}
+        - {x: 99.12666, y: -130.33325}
+        - {x: 106.12666, y: -115.33325}
+        - {x: 99.12666, y: -97.33325}
+    - name: HadalOriginal 2 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2213
+        width: 266
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110.1333, y: 27.426758}
+        - {x: -113.1333, y: 16.426758}
+        - {x: -113.1333, y: -26.573242}
+        - {x: 114.8667, y: -26.573242}
+        - {x: 114.8667, y: 21.426758}
+        - {x: 61.8667, y: 27.426758}
+    - name: HadalOriginal 2 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 2213
+        width: 266
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110.1333, y: 27.426758}
+        - {x: -113.1333, y: 16.426758}
+        - {x: -113.1333, y: -26.573242}
+        - {x: 114.8667, y: -26.573242}
+        - {x: 114.8667, y: 21.426758}
+        - {x: 61.8667, y: 27.426758}
+    - name: HadalOriginal 2 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1540
+        width: 44
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.873333, y: 32.633423}
+        - {x: -18.873333, y: 26.633423}
+        - {x: -18.873333, y: -26.366577}
+        - {x: -15.873333, y: -32.366577}
+        - {x: 20.126667, y: -32.366577}
+        - {x: 20.126667, y: 32.633423}
+    - name: HadalOriginal 2 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1540
+        width: 44
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.873291, y: 32.633423}
+        - {x: -18.873291, y: 26.633423}
+        - {x: -18.873291, y: -26.366577}
+        - {x: -15.873291, y: -32.366577}
+        - {x: 20.126709, y: -32.366577}
+        - {x: 20.126709, y: 32.633423}
+    - name: HadalOriginal 2 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 1385
+        width: 44
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.873291, y: 33.3667}
+        - {x: -18.873291, y: -28.6333}
+        - {x: -15.873291, y: -31.6333}
+        - {x: 20.126709, y: -31.6333}
+        - {x: 20.126709, y: 33.3667}
+    - name: HadalOriginal 2 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 785
+        width: 44
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18.873333, y: 33.3667}
+        - {x: -18.873333, y: -28.6333}
+        - {x: -15.873333, y: -31.6333}
+        - {x: 20.126667, y: -31.6333}
+        - {x: 20.126667, y: 33.3667}
+    - name: HadalOriginal 2 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 851
+        width: 164
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33.3667, y: 42.186707}
+        - {x: -69.6333, y: 42.186707}
+        - {x: -69.6333, y: -41.813293}
+        - {x: 19.3667, y: -41.813293}
+        - {x: 69.3667, y: -39.813293}
+        - {x: 71.3667, y: -35.813293}
+        - {x: 71.3667, y: 32.186707}
+        - {x: 51.3667, y: 41.186707}
+    - name: HadalOriginal 2 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 785
+        width: 134
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53.273315, y: 99.8667}
+        - {x: -57.273315, y: 51.8667}
+        - {x: -57.273315, y: -67.1333}
+        - {x: -49.273315, y: -98.1333}
+        - {x: 33.726685, y: -98.1333}
+        - {x: 57.726685, y: -61.1333}
+        - {x: 57.726685, y: 58.8667}
+        - {x: 35.726685, y: 99.8667}
+    - name: HadalOriginal 2 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 125
+        width: 266
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.13333, y: 27.666672}
+        - {x: -113.13333, y: -26.333328}
+        - {x: 86.86667, y: -26.333328}
+        - {x: 114.86667, y: -11.333328}
+        - {x: 114.86667, y: 27.666672}
+    - name: HadalOriginal 2 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 125
+        width: 266
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -113.1333, y: 27.666672}
+        - {x: -113.1333, y: -26.333328}
+        - {x: 86.8667, y: -26.333328}
+        - {x: 114.8667, y: -11.333328}
+        - {x: 114.8667, y: 27.666672}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

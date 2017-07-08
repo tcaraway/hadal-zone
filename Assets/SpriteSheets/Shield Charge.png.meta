@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 0124872bc42e24230a1868e34edc74d2
+timeCreated: 1491440705
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Shield Charge_0
+    21300002: Shield Charge_1
+    21300004: Shield Charge_2
+    21300006: Shield Charge_3
+    21300008: Shield Charge_4
+    21300010: Shield Charge_5
+    21300012: Shield Charge_6
+    21300014: Shield Charge_7
+    21300016: Shield Charge_8
+    21300018: Shield Charge_9
+    21300020: Shield Charge_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Shield Charge_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1974
+        width: 1208
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 52.681885}
+        - {x: -585.6515, y: -52.318115}
+        - {x: 587.3485, y: -52.318115}
+        - {x: 587.3485, y: 52.681885}
+    - name: Shield Charge_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1782
+        width: 1208
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 52.5}
+        - {x: -585.6515, y: -52.5}
+        - {x: 587.3485, y: -52.5}
+        - {x: 587.3485, y: 52.5}
+    - name: Shield Charge_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1589
+        width: 1208
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 54.34851}
+        - {x: -585.6515, y: -52.65149}
+        - {x: 587.3485, y: -52.65149}
+        - {x: 587.3485, y: 54.34851}
+    - name: Shield Charge_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1397
+        width: 1208
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 54.666748}
+        - {x: -585.6515, y: -53.333252}
+        - {x: 587.3485, y: -53.333252}
+        - {x: 587.3485, y: 54.666748}
+    - name: Shield Charge_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1206
+        width: 1208
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 53.95459}
+        - {x: -585.6515, y: -53.04541}
+        - {x: 587.3485, y: -53.04541}
+        - {x: 587.3485, y: 53.95459}
+    - name: Shield Charge_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1014
+        width: 1208
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 52.772766}
+        - {x: -585.6515, y: -52.227234}
+        - {x: 587.3485, y: -52.227234}
+        - {x: 587.3485, y: 52.772766}
+    - name: Shield Charge_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 822
+        width: 1208
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 52.590942}
+        - {x: -585.6515, y: -52.409058}
+        - {x: 587.3485, y: -52.409058}
+        - {x: 587.3485, y: 52.590942}
+    - name: Shield Charge_7
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 629
+        width: 1208
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 54.439392}
+        - {x: -585.6515, y: -52.560608}
+        - {x: 587.3485, y: -52.560608}
+        - {x: 587.3485, y: 54.439392}
+    - name: Shield Charge_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 437
+        width: 1208
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 54.7576}
+        - {x: -585.6515, y: -53.2424}
+        - {x: 587.3485, y: -53.2424}
+        - {x: 587.3485, y: 54.7576}
+    - name: Shield Charge_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 245
+        width: 1208
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 54.57576}
+        - {x: -585.6515, y: -53.42424}
+        - {x: 587.3485, y: -53.42424}
+        - {x: 587.3485, y: 54.57576}
+    - name: Shield Charge_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 54
+        width: 1208
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -585.6515, y: 53.86364}
+        - {x: -585.6515, y: -53.13636}
+        - {x: 587.3485, y: -53.13636}
+        - {x: 587.3485, y: 53.86364}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
