@@ -65,6 +65,7 @@ public class PlayerPartController : MonoBehaviour {
 	public void killSelf(){
 		if (partIdentifier != 1) {
 			gameObject.transform.parent = null;
+            Invoke("destroySelf", 3.0f);
 			if (!hasMadeBubbles) {
 				hasMadeBubbles = true;
 				GameObject bubbles = (GameObject)Instantiate (bubbleSystem, transform.position, transform.rotation);
@@ -107,4 +108,9 @@ public class PlayerPartController : MonoBehaviour {
 			health = maxHealth;
 		}
 	}
+
+    private void destroySelf()
+    {
+        GameObject.Destroy(gameObject);
+    }
 }

@@ -20,9 +20,13 @@ public class CrabBossHead : MonoBehaviour {
     public ParticleSystem hitParticles;
     public GameObject deathExplosion;
 
+    public GameObject arrowUp; //arrow pointing up for player to go to next level
+    private GameObject bossSpawner;
+
 	// Use this for initialization
 	void Start () {
         phase = 1;
+        bossSpawner = GameObject.FindGameObjectWithTag("CrabboSpawner");
 	}
 	
 	// Update is called once per frame
@@ -48,6 +52,8 @@ public class CrabBossHead : MonoBehaviour {
             Instantiate(deathExplosion, transform.position, transform.rotation);
             Destroy(leftEye.gameObject);
             Destroy(rightEye.gameObject);
+            Instantiate(arrowUp, transform.position, transform.rotation);
+            bossSpawner.SendMessage("switchBossDead");
             Destroy(gameObject);
         }
     }

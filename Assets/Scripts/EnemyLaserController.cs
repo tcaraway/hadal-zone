@@ -54,7 +54,7 @@ public class EnemyLaserController : MonoBehaviour {
 		} else {
 		}
 
-		if (target.tag != "PlayerLaser" && target.tag != "Enemy" && target.tag != "EnemyBolt" && target.tag != "EnemySpawner" && target.tag != "pickup") {
+		if (target.tag != "PlayerLaser" && target.tag != "Enemy" && target.tag != "EnemyBolt" && target.tag != "EnemySpawner" && target.tag != "pickup" && target.tag != "CrabboSpawner") {
 			Destroy (gameObject);
 		}
 	}

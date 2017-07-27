@@ -22,6 +22,9 @@ public class GameController : MonoBehaviour {
 	public GameObject gameOver;
 	public GameObject restart;
 	public GameObject mainMenu;
+    public GameObject pauseText;
+    public GameObject options;
+    public GameObject resume;
 
 	public GameObject cockpit;
 	public GameObject rightThrust;
@@ -30,15 +33,20 @@ public class GameController : MonoBehaviour {
 	public GameObject coinText;
 
 	public bool isGameOver;
+    public bool isPaused;
 	public int lives; 
 	public int wallet; //how many triton coins player has total
 
 	// Use this for initialization
 	void Start () {
+        isPaused = false;
 		isGameOver = false;
 		gameOver.SetActive (false);
 		restart.SetActive (false);
 		mainMenu.SetActive (false);
+        pauseText.SetActive(false);
+        options.SetActive(false);
+        resume.SetActive(false);
 
 		//quads' y is 35, so multiply that by # of quads to get bossQuadY
 		bossQuadY = numQuads * 35;
@@ -61,6 +69,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		checkGameOver ();
+        checkPause();
 	}
 
 	void placeQuads(){
@@ -102,10 +111,49 @@ public class GameController : MonoBehaviour {
 
 	public void restartGame(){
 		SceneManager.LoadScene ("Coral");
+        unpauseGame();
 	}
 
 	public void goToMainMenu(){
 		SceneManager.LoadScene ("TitleScreen");
+        unpauseGame();
 	}
+
+    public void pauseGame()
+    {
+        Time.timeScale = 0;
+        isPaused = true;
+        pauseText.SetActive(true);
+        restart.SetActive(true);
+        mainMenu.SetActive(true);
+        options.SetActive(true);
+        resume.SetActive(true);
+    }
+
+    public void unpauseGame()
+    {
+        
+        isPaused = false;
+        Time.timeScale = 1;
+        pauseText.SetActive(false);
+        restart.SetActive(false);
+        mainMenu.SetActive(false);
+        options.SetActive(false);
+        resume.SetActive(false);
+    }
+
+    public void checkPause()
+    {
+        if (Input.GetButton("Cancel") && !isGameOver)
+        {
+            if (!isPaused)
+                pauseGame();
+        }
+    }
+
+    public bool returnIsPaused()
+    {
+        return isPaused;
+    }
 		
 }

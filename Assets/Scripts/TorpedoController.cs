@@ -39,7 +39,7 @@ public class TorpedoController : MonoBehaviour {
 					hitObject.SendMessage ("takeDamage", secondDmg);
 			}
 		}
-		if (target.tag != "EnemyBolt" && target.tag != "PlayerLaser" && target.tag != "EnemySpawner") {
+		if (target.tag != "EnemyBolt" && target.tag != "PlayerLaser" && target.tag != "EnemySpawner" && target.tag != "CrabboSpawner") {
 			Instantiate (hitSplash, transform.position, transform.rotation);
 			Destroy (gameObject);
 		}

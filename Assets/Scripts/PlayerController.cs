@@ -74,10 +74,15 @@ public class PlayerController : MonoBehaviour {
 	public Transform specialPosition;
 	public Transform thrusterPosition;
 
+    public bool isAtBoss; //is the player in range of boss spawn point? Used to clamp movement for boss fights 
+    public bool isBossDead; //has the boss been defeated for this level?
+
 
 	// Use this for initialization
 	void Start () 
 	{
+        isBossDead = false;
+        isAtBoss = false;
 		gameController = GameObject.FindGameObjectWithTag ("GameController");
 		gameScript = gameController.GetComponent<GameController> ();
 		originalFireRate = fireRate;
@@ -100,18 +105,21 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		checkDeath ();
-		checkWings ();
-		checkThrusters ();
-		rotateTorwardsMouse();
-		thrusterAnimation ();
-		shoot ();
-		updateShieldUI ();
-		shieldUp ();
-		checkParts();
-		updateTorpedoUI ();
-		shootTorpedo ();
-		clampMovement ();
+        if (!gameScript.returnIsPaused())
+        {
+            checkDeath();
+            checkWings();
+            checkThrusters();
+            rotateTorwardsMouse();
+            thrusterAnimation();
+            shoot();
+            updateShieldUI();
+            shieldUp();
+            checkParts();
+            updateTorpedoUI();
+            shootTorpedo();
+            clampMovement();
+        }
 	}
 
 	void FixedUpdate()
@@ -158,7 +166,7 @@ public class PlayerController : MonoBehaviour {
 	//if both wings destroyed, lower fire-rate
 	void checkWings()
 	{
-		if (rightWing.transform.parent == null && leftWing.transform.parent == null)
+		if ((rightWing == null || rightWing.transform.parent == null) && (leftWing == null || leftWing.transform.parent == null))
 			fireRate = alternateFireRate;
 		else
 			fireRate = originalFireRate;
@@ -168,19 +176,28 @@ public class PlayerController : MonoBehaviour {
 	//checks if part is destroyed, if so set sprite to idle sprite
 	void checkParts()
 	{
-		if(rightWing.transform.parent == null)
-			rightWing.GetComponent<SpriteRenderer> ().sprite = rightGunIdle;
-		if (leftWing.transform.parent == null)
-			leftWing.GetComponent<SpriteRenderer> ().sprite = leftGunIdle;
-		if (thruster.transform.parent == null)
-			thruster.GetComponent<SpriteRenderer> ().sprite = thrusterIdle;
+        if (rightWing == null || rightWing.transform.parent == null)
+        {
+            if(rightWing != null)
+                rightWing.GetComponent<SpriteRenderer>().sprite = rightGunIdle;
+        }
+        if (leftWing == null || leftWing.transform.parent == null)
+        {
+            if(leftWing != null)
+             leftWing.GetComponent<SpriteRenderer>().sprite = leftGunIdle;
+        }
+        if (thruster == null || thruster.transform.parent == null)
+        {
+            if(thruster != null)
+                thruster.GetComponent<SpriteRenderer>().sprite = thrusterIdle;
+        }
 	}
 
 
 	//missing thrusters? lower speed
 	void checkThrusters()
 	{
-		if (thruster.transform.parent == null)
+		if (thruster == null || thruster.transform.parent == null)
 			speed = slowerSpeed1;
 		else
 			speed = originalSpeed;
@@ -202,10 +219,10 @@ public class PlayerController : MonoBehaviour {
 	{
 		Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"),0);
 		if (movement != Vector3.zero) {
-			if (thruster.transform.parent != null)
+			if (thruster != null && thruster.transform.parent != null)
 				thruster.GetComponent<SpriteRenderer> ().sprite = thrusterMoving;
 		} else {
-			if (thruster.transform.parent != null)
+			if (thruster != null && thruster.transform.parent != null)
 				thruster.GetComponent<SpriteRenderer> ().sprite = thrusterIdle;
 		}
 	}
@@ -218,15 +235,15 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButton ("Fire1") && Time.time > nextFire && !shieldActive) {
 			nextFire = Time.time + fireRate;
 
-			if (rightWing.transform.parent != null) {
+			if (rightWing != null && rightWing.transform.parent != null) {
 				rightWing.GetComponent<SpriteRenderer> ().sprite = rightGunFiring;
 				Instantiate (bolt, rightMainShotSpawn.position, rightMainShotSpawn.rotation);
 			}
-			if (leftWing.transform.parent != null) {
+			if (leftWing != null && leftWing.transform.parent != null) {
 				leftWing.GetComponent<SpriteRenderer> ().sprite = leftGunFiring;
 				Instantiate (bolt, leftMainShotSpawn.position, leftMainShotSpawn.rotation);
 			}
-			if (leftWing.transform.parent == null && rightWing.transform.parent == null) {
+			if ((leftWing == null || leftWing.transform.parent == null) && (rightWing == null || rightWing.transform.parent == null)) {
 				Instantiate (bolt, alternateShotSpawn1.position, alternateShotSpawn1.rotation);
 				Instantiate (bolt, alternateShotSpawn2.position, alternateShotSpawn2.rotation);
 			}
@@ -238,11 +255,16 @@ public class PlayerController : MonoBehaviour {
 	//handles updates to torpedo sprite in UI
 	void updateTorpedoUI()
 	{
-		//torpedoUI
-		if(Time.time > torpedoNextFire && torpedoBay.transform.parent != null)
-			torpedoUI.gameObject.GetComponent<Image> ().sprite = torpedoReady;
-		if(torpedoBay.transform.parent == null)
-			torpedoUI.gameObject.GetComponent<Image> ().sprite = torpedoWaiting;
+        //torpedoUI
+        if (torpedoBay != null)
+        {
+            if (Time.time > torpedoNextFire && torpedoBay.transform.parent != null)
+                torpedoUI.gameObject.GetComponent<Image>().sprite = torpedoReady;
+        }
+        else
+        { 
+         torpedoUI.gameObject.GetComponent<Image>().sprite = torpedoWaiting;
+        }
 	}
 
 
@@ -253,7 +275,7 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButton ("Fire2") && Time.time > torpedoNextFire && !shieldActive) {
 			torpedoNextFire = Time.time + torpedoFireRate;
 
-			if (torpedoBay.transform.parent != null) {
+			if (torpedoBay != null && torpedoBay.transform.parent != null) {
 				Instantiate (torpedo, torpedoSpawn.position, torpedoSpawn.rotation);
 				torpedoUI.gameObject.GetComponent<Image> ().sprite = torpedoWaiting;
 			}
@@ -266,12 +288,16 @@ public class PlayerController : MonoBehaviour {
 	{
 		yMin = mainCamera.transform.position.y - 10.0f;
 		yMax = mainCamera.transform.position.y + 10.0f;
+        if (isAtBoss && !isBossDead)
+        {
+            yMax = mainCamera.transform.position.y;
+        }
 		transform.position = new Vector3 (Mathf.Clamp(transform.position.x,xMin,xMax), Mathf.Clamp(transform.position.y,yMin,yMax),zClamp);
 	}
 
 	void shieldUp()
 	{
-		if (Input.GetKey ("space") && currentShield > 0 && !shieldCooldown) {
+		if (Input.GetKey ("space") && currentShield > 0 && !shieldCooldown && body != null) {
 			body.GetComponent<SpriteRenderer> ().sprite = cockpitShielding;
 			shield.SetActive (true);
 			shieldActive = true;
@@ -354,19 +380,19 @@ public class PlayerController : MonoBehaviour {
 
 
 	public void heal(){
-		if (rightWing.transform.parent == null) {
+		if (rightWing == null || rightWing.transform.parent == null) {
 			rightWing = (GameObject)Instantiate (prefabRightWing, rightWingPosition.position, transform.rotation);
 			rightWing.transform.parent = gameObject.transform;
 		}
-		if (leftWing.transform.parent == null) {
+		if (leftWing == null || leftWing.transform.parent == null) {
 			leftWing = (GameObject)Instantiate (prefabLeftWing, leftWingPosition.position, transform.rotation);
 			leftWing.transform.parent = gameObject.transform;
 		}
-		if (thruster.transform.parent == null) {
+		if (thruster == null || thruster.transform.parent == null) {
 			thruster = (GameObject)Instantiate (prefabThruster, thrusterPosition.position, transform.rotation);
 			thruster.transform.parent = gameObject.transform;
 		}
-		if (torpedoBay.transform.parent == null) {
+		if (torpedoBay == null || torpedoBay.transform.parent == null) {
 			torpedoBay = (GameObject)Instantiate (prefabSpecial, specialPosition.position, transform.rotation);
 			torpedoBay.transform.parent = gameObject.transform;
 		}
@@ -381,5 +407,16 @@ public class PlayerController : MonoBehaviour {
     public bool getShieldActive()
     {
         return shieldActive;
+    }
+
+    public void inBossRange()
+    {
+        isAtBoss = true;
+    }
+
+    public void bossIsDead()
+    {
+        isBossDead = true;
+        print("boss is dead");
     }
 }

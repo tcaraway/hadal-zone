@@ -91,7 +91,6 @@ public class CrabBossRightClaw : MonoBehaviour {
             disableBurst();
             Invoke("enableBurst", timeBetweenBursts);
         }
-        print(currentBurstShotCount);
     }
 
     private void disableBurst()

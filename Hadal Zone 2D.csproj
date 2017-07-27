@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BossCrabController.cs" />
+    <Compile Include="Assets\Scripts\BossSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraScroller.cs" />
     <Compile Include="Assets\Scripts\CoinController.cs" />
     <Compile Include="Assets\Scripts\Crab Boss\CrabBossController.cs" />
