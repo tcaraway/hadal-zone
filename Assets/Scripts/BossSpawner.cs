@@ -9,6 +9,7 @@ public class BossSpawner : MonoBehaviour {
     public float delayToSpawn; //when player is detected, how much of a wait until spawn?
     public bool spawning;
     public bool bossDead;
+	public float distanceToLockScreen; //how far spawner from player to start locking player movement for boss fight?
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class BossSpawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         player = GameObject.FindGameObjectWithTag("Player");
+		manageSpawning ();
 	}
 
     public void spawn()
@@ -27,19 +29,21 @@ public class BossSpawner : MonoBehaviour {
         Instantiate(spawnee, transform.position, transform.rotation);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        GameObject target = other.gameObject;
-        if (target.tag == "Cockpit" && !spawning)
-        {
-            spawning = true;
-            Invoke("spawn", delayToSpawn);
-        }
-        if (bossDead)
-            bossIsDeadToPlayer();
-        else
-            bossInRangeToPlayer();
-    }
+//    void OnTriggerEnter2D(Collider2D other)
+//    {
+//        GameObject target = other.gameObject;
+//        if (target.tag == "Cockpit" && !spawning)
+//        {
+//            spawning = true;
+//            Invoke("spawn", delayToSpawn);
+//        }
+//		if (bossDead)
+//			bossIsDeadToPlayer ();
+//		else {
+//			bossInRangeToPlayer ();
+//			print ("in range");
+//		}
+//    }
 
     private void bossInRangeToPlayer()
     {
@@ -56,4 +60,31 @@ public class BossSpawner : MonoBehaviour {
     {
         bossDead = true;
     }
+
+	private float getDistanceToPlayer(GameObject player){
+		float distance = Vector3.Distance (transform.position, player.transform.position);
+		return distance;
+	}
+
+	private bool isPlayerInRange(GameObject player){
+		float distance = getDistanceToPlayer (player);
+		print (distance);
+		if (distance <= distanceToLockScreen)
+			return true;
+		else
+			return false;
+	}
+
+	private void manageSpawning(){
+		if (isPlayerInRange (player) && !spawning) {
+			spawning = true;
+			Invoke("spawn", delayToSpawn);
+		}
+		if (bossDead)
+			bossIsDeadToPlayer ();
+		if (!bossDead && isPlayerInRange(player)) {
+			bossInRangeToPlayer ();
+
+		}
+	}
 }
